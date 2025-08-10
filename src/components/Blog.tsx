@@ -7,64 +7,124 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "കേരള Capital - Thiruvananthapuram 🏛",
-      excerpt: "Discover the real estate opportunities in Kerala's capital city, known for its rich heritage and growing property market.",
-      category: "Location Guide",
-      readTime: "5 min read",
+      title: "Exploring Thiruvananthapuram: The Capital City of Kerala",
+      excerpt: "Thiruvananthapuram, the capital and largest city of Kerala, is a perfect blend of ancient traditions and modern aspirations, offering a unique experience to every traveler.",
+      category: "Kerala Capital",
+      readTime: "8 min read",
       author: "Real Estate World",
-      date: "Dec 2024",
-      image: "/lovable-uploads/bcac3097-cfe3-4ab0-b9ce-fd41f850b9fd.png",
+      date: "Aug 2024",
+      image: "/lovable-uploads/5c93cb23-b158-4bbd-a520-425c283c1f59.png",
       featured: true
     },
     {
       id: 2,
-      title: "പത്മനാഭസ്വാമി ക്ഷേത്രം ⛩ - Property Investment Near Temple",
-      excerpt: "Explore premium property investments near the famous Padmanabhaswamy Temple in Trivandrum.",
-      category: "Investment",
-      readTime: "4 min read",
+      title: "Lalettan: The Complete Actor and Cultural Icon",
+      excerpt: "Mohanlal Viswanathan, known to millions as 'Lalettan,' is a name synonymous with excellence in Indian cinema with a career spanning over four decades.",
+      category: "Kerala Icons",
+      readTime: "10 min read",
       author: "Real Estate World",
-      date: "Dec 2024",
-      image: "/lovable-uploads/df1e54fb-07d7-4e7b-a4b2-9911d2fb44f3.png"
+      date: "Aug 2024",
+      image: "/lovable-uploads/3e93037b-771d-43e8-ae5e-6dc40ce8dce2.png"
     },
     {
       id: 3,
-      title: "Cochin Metro City 🚇 - Modern Living Opportunities",
-      excerpt: "How Kochi's metro expansion is creating new real estate hotspots and investment opportunities.",
-      category: "Market Trends",
-      readTime: "6 min read",
+      title: "Kathakali: The Storytelling Dance of Kerala",
+      excerpt: "Kathakali is one of the most popular and celebrated classical dance forms of Kerala, known for its dramatic storytelling, vibrant costumes, and expressive facial movements.",
+      category: "Kerala Culture",
+      readTime: "7 min read",
       author: "Real Estate World",
-      date: "Nov 2024",
-      image: "/lovable-uploads/9cc0c87e-7272-4f8a-8a9b-25cc78f01531.png"
+      date: "Aug 2024",
+      image: "/lovable-uploads/43b9c491-590d-4657-8415-54dcc2ffad5a.png"
     },
     {
       id: 4,
-      title: "കേരള Beaches 🏖 - Coastal Property Investment",
-      excerpt: "Investment opportunities in Kerala's stunning coastal areas and beachfront properties.",
-      category: "Investment",
-      readTime: "5 min read",
+      title: "My Own Home: The Dream of Every Malayali",
+      excerpt: "For every Malayali, owning a home is one of life's biggest dreams. It represents a world of hope, love, and family bonds - more than just a building.",
+      category: "Kerala Lifestyle",
+      readTime: "6 min read",
       author: "Real Estate World",
-      date: "Nov 2024",
-      image: "/lovable-uploads/a428939c-3aa1-462a-b72d-87fdf0f0c7f5.png"
+      date: "Aug 2024",
+      image: "/lovable-uploads/bacbe164-56e7-412b-a66d-f65cd5abc35e.png"
     },
     {
       id: 5,
-      title: "മലയാളിയുടെ ഒരു വീട് എന്ന സ്വപ്നം 🏠",
-      excerpt: "Understanding the Malayali dream of homeownership and how to make it a reality in today's market.",
-      category: "Lifestyle",
-      readTime: "7 min read",
+      title: "Sree Padmanabhaswamy Temple: A Journey into History, Devotion, and Mystery",
+      excerpt: "Nestled in the heart of Thiruvananthapuram stands the magnificent Sree Padmanabhaswamy Temple - a stunning repository of history, art, and devotion.",
+      category: "Kerala Heritage",
+      readTime: "12 min read",
       author: "Real Estate World",
-      date: "Nov 2024",
-      image: "/lovable-uploads/20b6b73b-3848-4f45-8076-f9d100cf2d51.png"
+      date: "Aug 2024",
+      image: "/lovable-uploads/5c93cb23-b158-4bbd-a520-425c283c1f59.png"
     },
     {
       id: 6,
-      title: "Kerala Hill Stations 🏞 - Mountain Property Guide",
-      excerpt: "Explore property opportunities in Kerala's beautiful hill stations like Munnar and Wayanad.",
-      category: "Location Guide",
-      readTime: "6 min read",
+      title: "Thrissur Pooram: The Grandest Festival of Festivals",
+      excerpt: "Thrissur Pooram, often hailed as the 'mother of all poorams' in Kerala, is a spectacular 36-hour non-stop celebration that captivates the senses and unites a city.",
+      category: "Kerala Festivals",
+      readTime: "15 min read",
       author: "Real Estate World",
-      date: "Oct 2024",
-      image: "/lovable-uploads/e922d076-1304-4946-afd2-f138431488c7.png"
+      date: "Aug 2024",
+      image: "/lovable-uploads/43b9c491-590d-4657-8415-54dcc2ffad5a.png"
+    },
+    {
+      id: 7,
+      title: "Kerala's Stunning Hill Stations: A Journey into Nature's Embrace",
+      excerpt: "Kerala is home to stunning hill stations that offer a perfect escape into nature's embrace, from sprawling tea plantations to dense forests and rolling meadows.",
+      category: "Kerala Tourism",
+      readTime: "10 min read",
+      author: "Real Estate World",
+      date: "Aug 2024",
+      image: "/lovable-uploads/43ef567e-6a79-4b5a-8535-7dd3f38dc00e.png"
+    },
+    {
+      id: 8,
+      title: "Kerala's Magnificent Waterfalls: Nature's Spectacular Display",
+      excerpt: "Kerala is home to numerous stunning waterfalls, each with its unique charm and surrounded by lush greenery, from the 'Niagara of South India' to hidden forest cascades.",
+      category: "Kerala Nature",
+      readTime: "8 min read",
+      author: "Real Estate World",
+      date: "Aug 2024",
+      image: "/lovable-uploads/43ef567e-6a79-4b5a-8535-7dd3f38dc00e.png"
+    },
+    {
+      id: 9,
+      title: "Kerala's Golden Coastline: Beaches That Captivate the Soul",
+      excerpt: "Kerala's coastline, with its long stretches of golden sand and turquoise waters, is dotted with some of the most beautiful beaches in India.",
+      category: "Kerala Beaches",
+      readTime: "9 min read",
+      author: "Real Estate World",
+      date: "Aug 2024",
+      image: "/lovable-uploads/98e5a004-aa58-407b-9856-2307fa92f5f7.png"
+    },
+    {
+      id: 10,
+      title: "Kochi: The Vibrant Metro City Where Heritage Meets Modernity",
+      excerpt: "Kochi stands as the commercial and industrial capital of Kerala, a vibrant metropolis that successfully balances ancient heritage with forward-thinking metropolitan outlook.",
+      category: "Kerala Cities",
+      readTime: "11 min read",
+      author: "Real Estate World",
+      date: "Aug 2024",
+      image: "/lovable-uploads/c2353c37-2a36-470f-919d-443a66e8b34b.png"
+    },
+    {
+      id: 11,
+      title: "Nilambur Teak: The Mecca of Teak and Kerala's Green Gold",
+      excerpt: "Nilambur teak, known as 'The Mecca of Teak,' is a world-renowned variety from Kerala, highly prized for its exceptional quality and holding prestigious GI status.",
+      category: "Kerala Heritage",
+      readTime: "8 min read",
+      author: "Real Estate World",
+      date: "Aug 2024",
+      image: "/lovable-uploads/d3a19ff4-8a81-41f0-9dd8-20d436c5382a.png"
+    },
+    {
+      id: 12,
+      title: "SM Street: Kozhikode's Historic Sweet Meat Street",
+      excerpt: "SM Street, also known as 'Kozhikode Mithai Theruvu,' is one of the busiest and most historic commercial hubs in Kozhikode city, famous for centuries of sweet-making tradition.",
+      category: "Kerala Heritage",
+      readTime: "5 min read",
+      author: "Real Estate World",
+      date: "Aug 2024",
+      image: "/lovable-uploads/40f83606-3cc8-4f51-95e4-fb7d081bc559.png"
     }
   ];
 
