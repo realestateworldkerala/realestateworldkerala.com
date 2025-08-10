@@ -1,42 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Real Estate World Design System - Luxury Maroon & Gold Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Brand Colors - Maroon & Gold */
+    --background: 0 12% 8%; /* Deep maroon background */
+    --foreground: 45 85% 85%; /* Warm silver text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 15% 12%; /* Slightly lighter maroon for cards */
+    --card-foreground: 45 85% 85%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 15% 12%;
+    --popover-foreground: 45 85% 85%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Premium Gold Primary */
+    --primary: 45 95% 60%; /* Rich golden */
+    --primary-foreground: 0 12% 8%; /* Dark text on gold */
+    --primary-glow: 45 100% 70%; /* Brighter gold for effects */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Maroon Secondary */
+    --secondary: 0 35% 25%; /* Medium maroon */
+    --secondary-foreground: 45 85% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones */
+    --muted: 0 20% 15%;
+    --muted-foreground: 45 25% 65%; /* Muted silver */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent gold variations */
+    --accent: 45 90% 55%;
+    --accent-foreground: 0 12% 8%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 45 85% 85%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 20% 20%;
+    --input: 0 20% 18%;
+    --ring: 45 95% 60%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Premium Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(45 95% 60%), hsl(45 100% 70%), hsl(35 90% 55%));
+    --gradient-maroon: linear-gradient(135deg, hsl(0 12% 8%), hsl(0 20% 15%), hsl(0 25% 12%));
+    --gradient-luxury: linear-gradient(135deg, hsl(45 95% 60%) 0%, hsl(0 35% 25%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 12% 8%) 0%, hsl(0 25% 12%) 50%, hsl(0 35% 25%) 100%);
+
+    /* Elegant Shadows */
+    --shadow-gold: 0 10px 30px -5px hsl(45 95% 60% / 0.3);
+    --shadow-luxury: 0 20px 40px -10px hsl(0 12% 8% / 0.8);
+    --shadow-glow: 0 0 40px hsl(45 100% 70% / 0.4);
+    --shadow-card: 0 8px 32px hsl(0 12% 8% / 0.6);
+
+    /* Animations */
+    --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -94,12 +116,103 @@ All colors MUST be HSL.
   }
 }
 
+}
+
 @layer base {
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-poppins;
+    background: var(--gradient-maroon);
+    min-height: 100vh;
+  }
+
+  /* Luxury Typography */
+  .font-luxury {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Brand Text Styling */
+  .brand-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 2px 4px hsl(45 95% 60% / 0.3));
+  }
+
+  /* Luxury Button Styles */
+  .btn-luxury {
+    background: var(--gradient-primary);
+    color: hsl(var(--primary-foreground));
+    box-shadow: var(--shadow-gold);
+    transition: var(--transition-luxury);
+    border: 1px solid hsl(45 95% 60%);
+  }
+
+  .btn-luxury:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+    filter: brightness(1.1);
+  }
+
+  /* Premium Card Styles */
+  .card-luxury {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-luxury);
+    backdrop-filter: blur(10px);
+  }
+
+  .card-luxury:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-luxury);
+    border-color: hsl(45 95% 60% / 0.3);
+  }
+
+  /* Animated Gradient Text */
+  .text-gradient-animate {
+    background: linear-gradient(45deg, hsl(45 95% 60%), hsl(45 100% 70%), hsl(35 90% 55%), hsl(45 95% 60%));
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 3s ease-in-out infinite;
+  }
+
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* Floating Animation */
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Pulse Glow Effect */
+  .pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(45 95% 60% / 0.3);
+    }
+    50% { 
+      box-shadow: 0 0 40px hsl(45 95% 60% / 0.6), 0 0 60px hsl(45 95% 60% / 0.4);
+    }
   }
 }
