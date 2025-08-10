@@ -7,53 +7,83 @@ const Properties = () => {
   const featuredProperties = [
     {
       id: 1,
-      title: "Luxury Villa in Trivandrum",
-      location: "Nemon, Trivandrum",
-      price: "₹85 Lakhs",
-      type: "Villa",
-      status: "For Sale",
-      bedrooms: 4,
-      bathrooms: 3,
-      area: "2500 sq ft",
-      image: "/lovable-uploads/bcac3097-cfe3-4ab0-b9ce-fd41f850b9fd.png",
-      description: "Spacious luxury villa with modern amenities in a prime location"
-    },
-    {
-      id: 2,
-      title: "Modern House in Kerala",
-      location: "Kochi",
-      price: "₹65 Lakhs",
+      title: "New 3 BHK House in Mukkampalamudu",
+      location: "Mukkampalamudu, Near Mudavullpara",
+      price: "₹52 Lakhs",
       type: "House",
       status: "For Sale",
       bedrooms: 3,
       bathrooms: 2,
-      area: "1800 sq ft",
-      image: "/lovable-uploads/9cc0c87e-7272-4f8a-8a9b-25cc78f01531.png",
-      description: "Contemporary design house with excellent connectivity"
+      area: "1650 sq ft",
+      landArea: "4 Cent",
+      floors: "2 Floors",
+      image: "/lovable-uploads/bcac3097-cfe3-4ab0-b9ce-fd41f850b9fd.png",
+      description: "Brand new house near upcoming highway Kazhakootam to Vizhijam. Modern construction with excellent connectivity."
+    },
+    {
+      id: 2,
+      title: "Kerala Style House in Konni",
+      location: "400m from Konni Junction, Pathanamthitta",
+      price: "₹1.85 Crores",
+      type: "House",
+      status: "For Sale",
+      bedrooms: 3,
+      bathrooms: 2,
+      area: "3000 sq ft",
+      landArea: "18 Cent",
+      floors: "2 Floors",
+      age: "8 Years",
+      image: "/lovable-uploads/20b6b73b-3848-4f45-8076-f9d100cf2d51.png",
+      description: "Traditional Kerala style house with spacious rooms and excellent location near Konni junction."
     },
     {
       id: 3,
-      title: "Premium Residential Plot",
-      location: "Nemon, Near Police Station",
-      price: "₹45 Lakhs",
+      title: "Commercial Plot in Nemom",
+      location: "Nemom, Trivandrum",
+      price: "₹17 Lakhs/Cent",
       type: "Land",
       status: "For Sale",
       area: "22.5 Cent",
       image: "/lovable-uploads/a428939c-3aa1-462a-b72d-87fdf0f0c7f5.png",
-      description: "22.5 cent land for sale at Nemon, 50 mtr near police station"
+      description: "Prime commercial/residential plot near QRS, 25 mtr from Trivandrum to Kanyakumari state highway."
     },
     {
       id: 4,
-      title: "Family Home with Garden",
-      location: "Trivandrum",
-      price: "₹75 Lakhs",
-      type: "House",
+      title: "House Plot in Murinjapalam",
+      location: "Murinjapalam, Trivandrum",
+      price: "₹19 Lakhs/Cent", 
+      type: "Land",
       status: "For Sale",
-      bedrooms: 3,
-      bathrooms: 2,
-      area: "2000 sq ft",
-      image: "/lovable-uploads/20b6b73b-3848-4f45-8076-f9d100cf2d51.png",
-      description: "Beautiful family home with landscaped garden and parking"
+      area: "10 Cent",
+      image: "/lovable-uploads/e922d076-1304-4946-afd2-f138431488c7.png",
+      description: "50m from junction, 150m from Cosmo Hospital, 1.5km from Trivandrum Medical College. Excellent location."
+    },
+    {
+      id: 5,
+      title: "Premium Modern House in Sasthamangalam",
+      location: "Near Sasthamangalam, Trivandrum",
+      price: "₹7 Crores",
+      type: "Villa",
+      status: "For Sale", 
+      bedrooms: 5,
+      bathrooms: 4,
+      area: "5400 sq ft",
+      landArea: "33 Cent",
+      image: "/lovable-uploads/9cc0c87e-7272-4f8a-8a9b-25cc78f01531.png",
+      description: "Ultra-modern premium house with all modern systems and luxury amenities. Perfect for sophisticated living."
+    },
+    {
+      id: 6,
+      title: "Bavani Tower - Commercial Building",
+      location: "Aryasala, Trivandrum",
+      price: "₹27 Crores",
+      type: "Commercial",
+      status: "For Sale",
+      area: "34,000 sq ft",
+      landArea: "21 Cent", 
+      floors: "7 Floors",
+      image: "/lovable-uploads/df1e54fb-07d7-4e7b-a4b2-9911d2fb44f3.png",
+      description: "Premium 7-floor commercial building with excellent investment potential in prime Trivandrum location."
     }
   ];
 
@@ -114,31 +144,52 @@ const Properties = () => {
                 </p>
 
                 {/* Property Features */}
-                {property.bedrooms && (
-                  <div className="flex items-center gap-6 mb-6 text-sm">
-                    <div className="flex items-center gap-1">
-                      <Bed className="w-4 h-4 text-primary" />
-                      <span>{property.bedrooms} Beds</span>
-                    </div>
-                    {property.bathrooms && (
+                <div className="space-y-2 mb-6">
+                  {property.bedrooms && (
+                    <div className="flex items-center gap-6 text-sm">
                       <div className="flex items-center gap-1">
-                        <Bath className="w-4 h-4 text-primary" />
-                        <span>{property.bathrooms} Baths</span>
+                        <Bed className="w-4 h-4 text-primary" />
+                        <span>{property.bedrooms} Beds</span>
                       </div>
-                    )}
-                    <div className="flex items-center gap-1">
+                      {property.bathrooms && (
+                        <div className="flex items-center gap-1">
+                          <Bath className="w-4 h-4 text-primary" />
+                          <span>{property.bathrooms} Baths</span>
+                        </div>
+                      )}
+                      <div className="flex items-center gap-1">
+                        <Square className="w-4 h-4 text-primary" />
+                        <span>{property.area}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {!property.bedrooms && (
+                    <div className="flex items-center gap-1 text-sm">
                       <Square className="w-4 h-4 text-primary" />
                       <span>{property.area}</span>
                     </div>
-                  </div>
-                )}
+                  )}
 
-                {!property.bedrooms && (
-                  <div className="flex items-center gap-1 mb-6 text-sm">
-                    <Square className="w-4 h-4 text-primary" />
-                    <span>{property.area}</span>
+                  {/* Additional Property Details */}
+                  <div className="flex flex-wrap gap-4 text-xs text-muted-foreground">
+                    {property.landArea && (
+                      <span className="bg-primary/10 px-2 py-1 rounded">
+                        🏞️ {property.landArea}
+                      </span>
+                    )}
+                    {property.floors && (
+                      <span className="bg-primary/10 px-2 py-1 rounded">
+                        🏢 {property.floors}
+                      </span>
+                    )}
+                    {property.age && (
+                      <span className="bg-primary/10 px-2 py-1 rounded">
+                        📅 {property.age} Old
+                      </span>
+                    )}
                   </div>
-                )}
+                </div>
 
                 {/* Action Buttons */}
                 <div className="flex gap-3">
