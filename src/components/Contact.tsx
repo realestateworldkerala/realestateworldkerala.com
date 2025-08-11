@@ -21,18 +21,25 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Simulate form submission to Zoho Bigin CRM
+
     try {
-      // Here you would integrate with Zoho Bigin API
-      console.log('Form data:', formData);
-      
+      const emailBody = encodeURIComponent(
+        `New enquiry from Real Estate World website\n\n` +
+        `Name: ${formData.name}\n` +
+        `Email: ${formData.email}\n` +
+        `Phone: ${formData.phone}\n` +
+        `Property Type: ${formData.propertyType}\n` +
+        `Budget: ${formData.budget}\n` +
+        `Message: ${formData.message}`
+      );
+      const mailto = `mailto:info@realestateworldkerala.com?subject=${encodeURIComponent("New Enquiry - Real Estate World")}&body=${emailBody}`;
+      window.location.href = mailto;
+
       toast({
-        title: "Message Sent Successfully!",
-        description: "We'll get back to you within 24 hours.",
+        title: "Message prepared in your email client",
+        description: "Please press send to deliver it to our CRM inbox.",
       });
-      
-      // Reset form
+
       setFormData({
         name: '',
         email: '',
@@ -41,16 +48,10 @@ const Contact = () => {
         budget: '',
         message: ''
       });
-      
-      // Also send WhatsApp message
-      const whatsappMessage = `Hi! I'm interested in Real Estate World services.\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nProperty Type: ${formData.propertyType}\nBudget: ${formData.budget}\nMessage: ${formData.message}`;
-      const whatsappUrl = `https://wa.me/919447258746?text=${encodeURIComponent(whatsappMessage)}`;
-      window.open(whatsappUrl, '_blank');
-      
     } catch (error) {
       toast({
         title: "Error",
-        description: "Failed to send message. Please try again.",
+        description: "Failed to prepare email. Please try again.",
         variant: "destructive",
       });
     }
@@ -110,9 +111,6 @@ const Contact = () => {
                     <div className="space-y-1">
                       <a href="mailto:info@realestateworldkerala.com" className="block text-muted-foreground hover:text-primary transition-colors">
                         info@realestateworldkerala.com
-                      </a>
-                      <a href="mailto:mcmmurali2@gmail.com" className="block text-muted-foreground hover:text-primary transition-colors">
-                        mcmmurali2@gmail.com
                       </a>
                     </div>
                   </div>
@@ -263,7 +261,7 @@ const Contact = () => {
 
               <div className="mt-6 p-4 bg-primary/5 border border-primary/20 rounded-lg">
                 <p className="text-sm text-muted-foreground text-center">
-                  <strong>Note:</strong> Your message will be forwarded to our CRM system and you'll also be connected via WhatsApp for instant assistance.
+                  <strong>Note:</strong> Your enquiry opens in your email app addressed to our CRM inbox (info@realestateworldkerala.com).
                 </p>
               </div>
             </Card>

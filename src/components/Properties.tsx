@@ -17,7 +17,7 @@ const Properties = () => {
       area: "1650 sq ft",
       landArea: "4 Cent",
       floors: "2 Floors",
-      image: "/lovable-uploads/bcac3097-cfe3-4ab0-b9ce-fd41f850b9fd.png",
+      image: "/lovable-uploads/9cc0c87e-7272-4f8a-8a9b-25cc78f01531.png",
       description: "Brand new house near upcoming highway Kazhakootam to Vizhijam. Modern construction with excellent connectivity."
     },
     {
@@ -69,7 +69,7 @@ const Properties = () => {
       bathrooms: 4,
       area: "5400 sq ft",
       landArea: "33 Cent",
-      image: "/lovable-uploads/9cc0c87e-7272-4f8a-8a9b-25cc78f01531.png",
+      image: "/lovable-uploads/bcac3097-cfe3-4ab0-b9ce-fd41f850b9fd.png",
       description: "Ultra-modern premium house with all modern systems and luxury amenities. Perfect for sophisticated living."
     },
     {
@@ -110,6 +110,7 @@ const Properties = () => {
                 <img 
                   src={property.image} 
                   alt={property.title}
+                  loading="lazy"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4">
