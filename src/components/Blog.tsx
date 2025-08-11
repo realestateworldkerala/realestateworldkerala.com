@@ -1,12 +1,12 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Clock, User, ArrowRight } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Clock, User } from "lucide-react";
+
 import { blogPosts } from "@/data/blog";
 
 const Blog = () => {
-  const navigate = useNavigate();
+  
 
   return (
     <section id="blog" className="py-20">
@@ -62,20 +62,14 @@ const Blog = () => {
                   {post.title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-6 line-clamp-3 text-lg">
-                  {post.excerpt}
-                </p>
+                <div className="text-muted-foreground mb-6 space-y-3 text-lg">
+                  {post.content.split('\n').map((para, idx) => (
+                    <p key={idx}>{para.trim()}</p>
+                  ))}
+                </div>
                 
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-muted-foreground">{post.date}</span>
-                  <Button 
-                    variant="outline"
-                    className="border-primary/30 text-primary hover:bg-primary/10 group"
-                    onClick={() => navigate(`/blog/${post.slug}`)}
-                  >
-                    Read More
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  <span className="text-sm text-muted-foreground">{post.date} • {post.readTime}</span>
                 </div>
               </div>
             </div>
@@ -113,19 +107,12 @@ const Blog = () => {
                   {post.title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-4 line-clamp-3 text-sm">
-                  {post.excerpt}
-                </p>
+                <div className="text-muted-foreground mb-4 space-y-3 text-sm">
+                  {post.content.split('\n').map((para, idx) => (
+                    <p key={idx}>{para.trim()}</p>
+                  ))}
+                </div>
                 
-                <Button 
-                  variant="ghost"
-                  size="sm"
-                  className="text-primary hover:bg-primary/10 p-0 h-auto group"
-                  onClick={() => navigate(`/blog/${post.slug}`)}
-                >
-                  Read More
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
               </div>
             </Card>
           ))}

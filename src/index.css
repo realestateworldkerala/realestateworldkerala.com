@@ -10,13 +10,13 @@
   :root {
     /* Core Brand Colors - Maroon & Gold */
     --background: 0 12% 8%; /* Deep maroon background */
-    --foreground: 45 85% 85%; /* Warm silver text */
+    --foreground: 0 0% 90%; /* Elegant silver text */
 
     --card: 0 15% 12%; /* Slightly lighter maroon for cards */
-    --card-foreground: 45 85% 85%;
+    --card-foreground: 0 0% 92%;
 
     --popover: 0 15% 12%;
-    --popover-foreground: 45 85% 85%;
+    --popover-foreground: 0 0% 92%;
 
     /* Premium Gold Primary */
     --primary: 45 95% 60%; /* Rich golden */
@@ -25,18 +25,18 @@
 
     /* Maroon Secondary */
     --secondary: 0 35% 25%; /* Medium maroon */
-    --secondary-foreground: 45 85% 85%;
+    --secondary-foreground: 0 0% 92%;
 
     /* Muted tones */
     --muted: 0 20% 15%;
-    --muted-foreground: 45 25% 65%; /* Muted silver */
+    --muted-foreground: 0 0% 70%; /* Muted silver */
 
     /* Accent gold variations */
     --accent: 45 90% 55%;
     --accent-foreground: 0 12% 8%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 45 85% 85%;
+    --destructive-foreground: 0 0% 98%;
 
     --border: 0 20% 20%;
     --input: 0 20% 18%;
