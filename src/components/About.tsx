@@ -21,15 +21,34 @@ const About = () => {
             <div className="space-y-6 mb-8">
               <p className="text-lg leading-relaxed">
                 Real Estate World has been Kerala's premier real estate consultancy for over a decade, 
-                specializing in premium properties across God's Own Country. Our deep understanding of 
-                local markets and commitment to client satisfaction has made us the trusted choice for 
-                property investors and homebuyers.
+                specializing in premium properties across God's Own Country. Our comprehensive real estate 
+                services include residential property sales, commercial real estate investments, luxury villa 
+                development, apartment complexes, land acquisition, and property management solutions throughout 
+                Thiruvananthapuram, Kochi, Kozhikode, Kottayam, and Alappuzha districts.
               </p>
               
               <p className="text-lg leading-relaxed text-muted-foreground">
-                From luxury villas in Trivandrum to modern apartments in Kochi, we've successfully 
-                facilitated over 500 property transactions, earning the trust of 427+ satisfied clients 
-                and maintaining a stellar 4.9-star rating on Google Reviews.
+                Our experienced real estate professionals understand Kerala's unique property market dynamics, 
+                from heritage homes in Fort Kochi to modern IT corridor developments in Technopark Trivandrum. 
+                We specialize in property valuation, legal documentation, home loans facilitation, and investment 
+                advisory services for both domestic and NRI clients seeking to invest in Kerala real estate.
+              </p>
+
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                With expertise in residential plots, luxury villas, budget apartments, commercial spaces, 
+                agricultural land, and waterfront properties, we've successfully facilitated over 500 property 
+                transactions worth ₹200+ crores. Our client-centric approach includes comprehensive market analysis, 
+                property documentation verification, negotiation support, and post-sale services, making us the 
+                most trusted real estate partner in Kerala with 427+ satisfied clients and a stellar 4.9-star 
+                rating based on 90+ Google Reviews.
+              </p>
+
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                Whether you're looking for budget homes under ₹50 lakhs, premium villas above ₹2 crores, 
+                commercial properties for business expansion, or investment opportunities in Kerala's growing 
+                real estate market, our team provides end-to-end solutions including property search, 
+                legal clearance, bank loan assistance, registration procedures, and ongoing property management 
+                services to ensure a seamless real estate experience.
               </p>
             </div>
 

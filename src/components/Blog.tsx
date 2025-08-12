@@ -25,7 +25,7 @@ const Blog = () => {
 
         {/* Featured Post */}
         {blogPosts.filter(post => post.featured).map((post) => (
-          <Card key={post.id} className="card-luxury overflow-hidden mb-12">
+          <Card key={post.id} className="card-luxury overflow-hidden mb-12 group">
             <div className="grid lg:grid-cols-2 gap-0">
               <div className="relative overflow-hidden">
                 <img 
@@ -62,14 +62,22 @@ const Blog = () => {
                   {post.title}
                 </h3>
                 
-                <div className="text-muted-foreground mb-6 space-y-3 text-lg">
-                  {post.content.split('\n').map((para, idx) => (
-                    <p key={idx}>{para.trim()}</p>
-                  ))}
+                <div className="text-muted-foreground mb-6 text-lg">
+                  <p className="line-clamp-3">
+                    {post.content.split('\n').slice(0, 3).join(' ').trim()}
+                  </p>
                 </div>
                 
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-muted-foreground">{post.date} • {post.readTime}</span>
+                  <Button 
+                    variant="outline" 
+                    size="sm"
+                    className="border-primary/30 text-primary hover:bg-primary/10"
+                    onClick={() => window.location.href = `/blog/${post.slug}`}
+                  >
+                    Read More
+                  </Button>
                 </div>
               </div>
             </div>
@@ -107,11 +115,20 @@ const Blog = () => {
                   {post.title}
                 </h3>
                 
-                <div className="text-muted-foreground mb-4 space-y-3 text-sm">
-                  {post.content.split('\n').map((para, idx) => (
-                    <p key={idx}>{para.trim()}</p>
-                  ))}
+                <div className="text-muted-foreground mb-4 text-sm">
+                  <p className="line-clamp-3">
+                    {post.content.split('\n').slice(0, 3).join(' ').trim()}
+                  </p>
                 </div>
+                
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  className="border-primary/30 text-primary hover:bg-primary/10 w-full"
+                  onClick={() => window.location.href = `/blog/${post.slug}`}
+                >
+                  Read More
+                </Button>
                 
               </div>
             </Card>
