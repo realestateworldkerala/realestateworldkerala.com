@@ -9,52 +9,52 @@
 @layer base {
   :root {
     /* Core Brand Colors - Premium Maroon & Gold */
-    --background: 0 45% 15%; /* Premium maroon background */
+    --background: 0 100% 25%; /* True maroon #800000 background */
     --foreground: 0 0% 85%; /* Premium silver text */
 
-    --card: 0 35% 20%; /* Premium maroon for cards */
+    --card: 0 100% 30%; /* Slightly lighter maroon for cards */
     --card-foreground: 0 0% 88%;
 
-    --popover: 0 35% 20%;
+    --popover: 0 100% 30%;
     --popover-foreground: 0 0% 88%;
 
     /* Premium Gold Primary */
     --primary: 45 100% 55%; /* Premium golden */
-    --primary-foreground: 0 45% 15%; /* Dark maroon text on gold */
+    --primary-foreground: 0 100% 25%; /* True maroon text on gold */
     --primary-glow: 45 100% 65%; /* Brighter premium gold for effects */
 
     /* Premium Maroon Secondary */
-    --secondary: 0 40% 25%; /* Premium maroon */
+    --secondary: 0 100% 25%; /* True maroon #800000 */
     --secondary-foreground: 0 0% 88%;
 
     /* Premium Silver Muted tones */
-    --muted: 0 30% 18%;
+    --muted: 0 100% 20%;
     --muted-foreground: 0 0% 75%; /* Premium silver */
 
     /* Premium Gold Accent variations */
     --accent: 45 95% 50%;
-    --accent-foreground: 0 45% 15%;
+    --accent-foreground: 0 100% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 20% 20%;
-    --input: 0 20% 18%;
+    --border: 0 100% 30%;
+    --input: 0 100% 20%;
     --ring: 45 95% 60%;
 
     --radius: 0.75rem;
 
     /* Premium Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(45 100% 55%), hsl(45 100% 65%), hsl(35 95% 50%));
-    --gradient-maroon: linear-gradient(135deg, hsl(0 45% 15%), hsl(0 35% 20%), hsl(0 40% 25%));
-    --gradient-luxury: linear-gradient(135deg, hsl(45 100% 55%) 0%, hsl(0 40% 25%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(0 45% 15%) 0%, hsl(0 35% 20%) 50%, hsl(0 40% 25%) 100%);
+    --gradient-maroon: linear-gradient(135deg, hsl(0 100% 25%), hsl(0 100% 30%), hsl(0 100% 35%));
+    --gradient-luxury: linear-gradient(135deg, hsl(45 100% 55%) 0%, hsl(0 100% 25%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 100% 25%) 0%, hsl(0 100% 30%) 50%, hsl(0 100% 35%) 100%);
 
     /* Premium Shadows */
     --shadow-gold: 0 10px 30px -5px hsl(45 100% 55% / 0.4);
-    --shadow-luxury: 0 20px 40px -10px hsl(0 45% 15% / 0.8);
+    --shadow-luxury: 0 20px 40px -10px hsl(0 100% 25% / 0.8);
     --shadow-glow: 0 0 40px hsl(45 100% 65% / 0.5);
-    --shadow-card: 0 8px 32px hsl(0 45% 15% / 0.6);
+    --shadow-card: 0 8px 32px hsl(0 100% 25% / 0.6);
 
     /* Animations */
     --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
