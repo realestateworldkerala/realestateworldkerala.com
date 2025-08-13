@@ -44,8 +44,8 @@ const Services = () => {
             Complete <span className="text-gradient-animate">Real Estate</span> Solutions
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From buying your dream home to strategic investments, we provide comprehensive 
-            real estate services tailored to your needs in Kerala
+            From <a href="#properties" className="text-primary hover:text-primary-glow underline transition-colors">buying your dream home</a> to strategic investments, we provide comprehensive 
+            real estate services tailored to your needs in Kerala. Learn more <a href="#about" className="text-primary hover:text-primary-glow underline transition-colors">about our experience</a> and view <a href="#reviews" className="text-primary hover:text-primary-glow underline transition-colors">client testimonials</a>.
           </p>
         </div>
 

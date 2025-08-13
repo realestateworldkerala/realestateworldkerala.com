@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, User } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import { blogPosts } from "@/data/blog";
 
@@ -68,17 +69,19 @@ const Blog = () => {
                   </p>
                 </div>
                 
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-muted-foreground">{post.date} • {post.readTime}</span>
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    className="border-primary/30 text-primary hover:bg-primary/10"
-                    onClick={() => window.location.href = `/blog/${post.slug}`}
-                  >
-                    Read More
-                  </Button>
-                </div>
+                 <div className="flex items-center justify-between">
+                   <span className="text-sm text-muted-foreground">{post.date} • {post.readTime}</span>
+                   <Button 
+                     variant="outline" 
+                     size="sm"
+                     className="border-primary/30 text-primary hover:bg-primary/10"
+                     asChild
+                   >
+                     <Link to={`/blog/${post.slug}`}>
+                       Read More
+                     </Link>
+                   </Button>
+                 </div>
               </div>
             </div>
           </Card>
@@ -121,14 +124,16 @@ const Blog = () => {
                   </p>
                 </div>
                 
-                <Button 
-                  variant="outline" 
-                  size="sm"
-                  className="border-primary/30 text-primary hover:bg-primary/10 w-full"
-                  onClick={() => window.location.href = `/blog/${post.slug}`}
-                >
-                  Read More
-                </Button>
+                 <Button 
+                   variant="outline" 
+                   size="sm"
+                   className="border-primary/30 text-primary hover:bg-primary/10 w-full"
+                   asChild
+                 >
+                   <Link to={`/blog/${post.slug}`}>
+                     Read More
+                   </Link>
+                 </Button>
                 
               </div>
             </Card>

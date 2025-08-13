@@ -40,7 +40,7 @@ const Hero = () => {
               Discover premium properties in <span className="text-primary font-semibold">God's Own Country</span>
             </p>
             <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              10+ years of trusted expertise in Kerala real estate
+              10+ years of trusted expertise in <a href="#about" className="text-primary hover:text-primary-glow underline transition-colors">Kerala real estate</a> with comprehensive <a href="#services" className="text-primary hover:text-primary-glow underline transition-colors">property services</a>
             </p>
 
             {/* CTA Buttons */}
@@ -89,16 +89,16 @@ const Hero = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Home className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-semibold text-lg mb-2">Buy Property</h3>
-              <p className="text-sm text-muted-foreground">Find your dream home in Kerala's most sought-after locations</p>
+              <h3 className="font-semibold text-lg mb-2"><a href="#services" className="hover:text-primary transition-colors">Buy Property</a></h3>
+              <p className="text-sm text-muted-foreground">Find your <a href="#properties" className="text-primary hover:text-primary-glow underline transition-colors">dream home</a> in Kerala's most sought-after locations</p>
             </Card>
 
             <Card className="card-luxury p-6 text-center">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Award className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-semibold text-lg mb-2">Sell Property</h3>
-              <p className="text-sm text-muted-foreground">Get the best value for your property with our expert guidance</p>
+              <h3 className="font-semibold text-lg mb-2"><a href="#services" className="hover:text-primary transition-colors">Sell Property</a></h3>
+              <p className="text-sm text-muted-foreground">Get the best value for your property with our <a href="#about" className="text-primary hover:text-primary-glow underline transition-colors">expert guidance</a></p>
             </Card>
 
             <Card className="card-luxury p-6 text-center">
@@ -113,8 +113,8 @@ const Hero = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Star className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-semibold text-lg mb-2">Consultation</h3>
-              <p className="text-sm text-muted-foreground">Expert advice for all your real estate investment decisions</p>
+              <h3 className="font-semibold text-lg mb-2"><a href="#contact" className="hover:text-primary transition-colors">Consultation</a></h3>
+              <p className="text-sm text-muted-foreground">Expert advice for all your <a href="#services" className="text-primary hover:text-primary-glow underline transition-colors">real estate investment</a> decisions</p>
             </Card>
           </div>
         </div>

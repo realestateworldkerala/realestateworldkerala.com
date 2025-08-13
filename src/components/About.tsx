@@ -21,8 +21,8 @@ const About = () => {
             <div className="space-y-6 mb-8">
               <p className="text-lg leading-relaxed">
                 Real Estate World has been Kerala's premier real estate consultancy for over a decade, 
-                specializing in premium properties across God's Own Country. Our comprehensive real estate 
-                services include residential property sales, commercial real estate investments, luxury villa 
+                specializing in <a href="#properties" className="text-primary hover:text-primary-glow underline transition-colors">premium properties</a> across God's Own Country. Our comprehensive <a href="#services" className="text-primary hover:text-primary-glow underline transition-colors">real estate 
+                services</a> include residential property sales, commercial real estate investments, luxury villa 
                 development, apartment complexes, land acquisition, and property management solutions throughout 
                 Thiruvananthapuram, Kochi, Kozhikode, Kottayam, and Alappuzha districts.
               </p>
@@ -44,11 +44,11 @@ const About = () => {
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Whether you're looking for budget homes under ₹50 lakhs, premium villas above ₹2 crores, 
+                Whether you're looking for <a href="#properties" className="text-primary hover:text-primary-glow underline transition-colors">budget homes under ₹50 lakhs</a>, <a href="#properties" className="text-primary hover:text-primary-glow underline transition-colors">premium villas above ₹2 crores</a>, 
                 commercial properties for business expansion, or investment opportunities in Kerala's growing 
-                real estate market, our team provides end-to-end solutions including property search, 
+                real estate market, our team provides <a href="#services" className="text-primary hover:text-primary-glow underline transition-colors">end-to-end solutions</a> including property search, 
                 legal clearance, bank loan assistance, registration procedures, and ongoing property management 
-                services to ensure a seamless real estate experience.
+                services to ensure a seamless real estate experience. <a href="#contact" className="text-primary hover:text-primary-glow underline transition-colors">Contact us today</a> for personalized assistance.
               </p>
             </div>
 

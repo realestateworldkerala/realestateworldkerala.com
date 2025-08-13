@@ -50,7 +50,7 @@ const BlogPost = () => {
           <nav className="text-sm text-muted-foreground mb-6">
             <Link to="/" className="hover:text-primary">Home</Link>
             <span className="mx-2">/</span>
-            <a href="/#blog" className="hover:text-primary">Blog</a>
+            <Link to="/#blog" className="hover:text-primary">Blog</Link>
           </nav>
 
           <article className="prose prose-invert max-w-none">
@@ -70,7 +70,7 @@ const BlogPost = () => {
           </article>
 
           <div className="mt-12">
-            <a href="/#blog" className="text-primary underline">← Back to all articles</a>
+            <Link to="/#blog" className="text-primary underline">← Back to all articles</Link>
           </div>
         </div>
       </main>
