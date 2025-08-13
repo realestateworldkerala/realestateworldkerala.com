@@ -6,8 +6,13 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
-      <div className="absolute inset-0 bg-gradient-hero">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0">
+        <img 
+          src="/lovable-uploads/24ac6d28-108c-4f56-99ef-7a7c9d92210e.png" 
+          alt="Modern high-rise building" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       {/* Floating decorative elements */}
