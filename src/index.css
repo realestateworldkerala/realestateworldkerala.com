@@ -8,53 +8,53 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors - Rich Deep Maroon & Gold */
-    --background: 0 100% 20%; /* Deep rich maroon background */
-    --foreground: 0 0% 90%; /* Premium silver text */
+    /* Core Brand Colors - Premium Navy & Gold */
+    --background: 225 100% 8%; /* Deep premium navy background */
+    --foreground: 0 0% 95%; /* Premium platinum text */
 
-    --card: 0 100% 25%; /* Rich maroon for cards */
-    --card-foreground: 0 0% 92%;
+    --card: 225 100% 12%; /* Rich navy for cards */
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 100% 25%;
-    --popover-foreground: 0 0% 92%;
+    --popover: 225 100% 12%;
+    --popover-foreground: 0 0% 95%;
 
     /* Premium Gold Primary */
     --primary: 45 100% 55%; /* Premium golden */
-    --primary-foreground: 0 100% 20%; /* Deep maroon text on gold */
+    --primary-foreground: 225 100% 8%; /* Deep navy text on gold */
     --primary-glow: 45 100% 65%; /* Brighter premium gold for effects */
 
-    /* Rich Deep Maroon Secondary */
-    --secondary: 0 100% 20%; /* Deep rich maroon */
-    --secondary-foreground: 0 0% 92%;
+    /* Rich Deep Navy Secondary */
+    --secondary: 225 100% 15%; /* Deep premium navy */
+    --secondary-foreground: 0 0% 95%;
 
     /* Premium Silver Muted tones */
-    --muted: 0 100% 15%;
+    --muted: 225 50% 10%;
     --muted-foreground: 0 0% 80%; /* Premium silver */
 
     /* Premium Gold Accent variations */
     --accent: 45 95% 50%;
-    --accent-foreground: 0 100% 20%;
+    --accent-foreground: 225 100% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 100% 25%;
-    --input: 0 100% 15%;
+    --border: 225 50% 18%;
+    --input: 225 50% 12%;
     --ring: 45 95% 60%;
 
     --radius: 0.75rem;
 
     /* Premium Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(45 100% 55%), hsl(45 100% 65%), hsl(35 95% 50%));
-    --gradient-maroon: linear-gradient(135deg, hsl(0 100% 20%), hsl(0 100% 25%), hsl(0 100% 30%));
-    --gradient-luxury: linear-gradient(135deg, hsl(45 100% 55%) 0%, hsl(0 100% 20%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(0 100% 20%) 0%, hsl(0 100% 25%) 50%, hsl(0 100% 30%) 100%);
+    --gradient-navy: linear-gradient(135deg, hsl(225 100% 8%), hsl(225 100% 12%), hsl(225 100% 16%));
+    --gradient-luxury: linear-gradient(135deg, hsl(45 100% 55%) 0%, hsl(225 100% 8%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(225 100% 8%) 0%, hsl(225 100% 12%) 50%, hsl(225 100% 16%) 100%);
 
     /* Premium Shadows */
     --shadow-gold: 0 10px 30px -5px hsl(45 100% 55% / 0.4);
-    --shadow-luxury: 0 20px 40px -10px hsl(0 100% 20% / 0.8);
+    --shadow-luxury: 0 20px 40px -10px hsl(225 100% 8% / 0.8);
     --shadow-glow: 0 0 40px hsl(45 100% 65% / 0.5);
-    --shadow-card: 0 8px 32px hsl(0 100% 20% / 0.6);
+    --shadow-card: 0 8px 32px hsl(225 100% 8% / 0.6);
 
     /* Animations */
     --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,7 +123,7 @@
 
   body {
     @apply bg-background text-foreground font-poppins;
-    background: var(--gradient-maroon);
+    background: var(--gradient-navy);
     min-height: 100vh;
   }
 
