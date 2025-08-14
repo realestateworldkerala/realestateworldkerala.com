@@ -15,6 +15,42 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: 1,
+    slug: "sree-padmanabhaswamy-temple-history-devotion-mystery",
+    title: "Sree Padmanabhaswamy Temple: A Journey into History, Devotion, and Mystery",
+    excerpt:
+      "The magnificent Sree Padmanabhaswamy Temple stands as a symbol of Kerala's spiritual and architectural heritage.",
+    category: "Kerala Heritage",
+    readTime: "12 min read",
+    author: "Real Estate World",
+    date: "Aug 2024",
+    image: "/lovable-uploads/edacdd34-59c8-4dcf-8485-ef905aa06dc1.png",
+    featured: true,
+    content: `Nestled in the heart of Thiruvananthapuram stands the magnificent Sree Padmanabhaswamy Temple, a masterpiece that exemplifies Kerala's spiritual and architectural heritage. This ancient temple, dedicated to Lord Vishnu in his reclining posture on the serpent Ananta, is not just a place of worship but a treasure trove of history, art, and mystery that has captivated devotees and visitors for centuries.
+
+Historical Significance
+The temple's origins date back to the 8th century, though some believe it to be even older. The present structure showcases the finest examples of Dravidian architecture, with intricate carvings and sculptures that tell stories from Hindu mythology. The temple's association with the Travancore royal family has been profound, with the rulers considering themselves as servants of Lord Padmanabha.
+
+Architectural Marvel
+The temple complex is a stunning example of Kerala's traditional architecture, featuring:
+• The main sanctum with the deity in a reclining position spanning 18 feet
+• Intricate stone carvings depicting scenes from the Ramayana and Mahabharata
+• The magnificent gopuram (tower) that dominates the skyline
+• Traditional Kerala-style roofing with wooden beams and tiles
+• Sacred pools and courtyards that enhance the spiritual ambiance
+
+The Mystery of the Vaults
+One of the most intriguing aspects of the temple is its underground vaults, labeled A through F. In 2011, the opening of some vaults revealed an unprecedented treasure trove of gold, precious stones, and artifacts worth billions of dollars, making it one of the wealthiest temples in the world. However, Vault B remains unopened, shrouded in mystery and local beliefs about its contents.
+
+Cultural and Spiritual Importance
+The temple serves as a vital center for Kerala's cultural and spiritual life. The annual festivals, particularly the Laksha Deepam (lighting of a hundred thousand lamps), attract thousands of devotees. The temple's traditions, rituals, and festivals have been preserved for centuries, making it a living monument to Kerala's rich heritage.
+
+Visiting the Temple
+For visitors, the temple offers a profound spiritual experience. The strict dress code and traditional practices maintain the sanctity of this sacred space. The temple is open to Hindus only, and visitors must adhere to traditional attire - men in dhoti and women in saree or traditional Kerala dress.
+
+The temple stands as a testament to the artistic brilliance, spiritual depth, and cultural richness of Kerala. It remains not just a place of worship but a symbol of the state's glorious past and continuing traditions, drawing pilgrims and art enthusiasts from around the world to witness its divine beauty and mysterious grandeur.`
+  },
+  {
+    id: 2,
     slug: "thiruvananthapuram-capital-of-kerala",
     title: "Exploring Thiruvananthapuram: The Capital City of Kerala",
     excerpt:
@@ -24,11 +60,10 @@ export const blogPosts: BlogPost[] = [
     author: "Real Estate World",
     date: "Aug 2024",
     image: "/lovable-uploads/5c93cb23-b158-4bbd-a520-425c283c1f59.png",
-    featured: true,
     content: `Thiruvananthapuram, also known as Trivandrum, is the capital and largest city of the Indian state of Kerala. This beautiful city is a perfect blend of ancient traditions and modern aspirations, offering a unique experience to every traveler.
 
-A Glimpse into the City’s Heritage
-The name Thiruvananthapuram translates to "City of Lord Ananta," referring to the deity of the Sree Padmanabhaswamy Temple, the city’s most famous landmark. The temple’s stunning architecture and historical significance attract devotees and tourists from all over the world.
+A Glimpse into the City's Heritage
+The name Thiruvananthapuram translates to "City of Lord Ananta," referring to the deity of the Sree Padmanabhaswamy Temple, the city's most famous landmark. The temple's stunning architecture and historical significance attract devotees and tourists from all over the world.
 
 The image provided shows the Kerala Legislative Assembly complex, a significant landmark in the city. Its traditional Kerala architectural style, with a sloping tiled roof and intricate woodwork, makes it an impressive sight. This building is a symbol of the state's governance and rich cultural heritage.
 
@@ -47,7 +82,7 @@ While preserving its historical charm, Thiruvananthapuram is also a fast-growing
 In conclusion, Thiruvananthapuram is a city that offers something for everyone, whether you are interested in history, culture, nature, or modern development. Its tranquil environment and warm hospitality make it a must-visit destination in Kerala.`
   },
   {
-    id: 2,
+    id: 3,
     slug: "mohanlal-the-complete-actor",
     title: "Lalettan: The Complete Actor and Cultural Icon",
     excerpt:
@@ -80,7 +115,7 @@ Beyond the Screen
 Mohanlal's personal life is a testament to his humility and grounded nature. He is known for his close bonds with his colleagues and his love for art, literature, and music. He is an inspiration to aspiring actors and a beloved figure to his fans, who affectionately call him "Lalettan" (meaning "elder brother"). His journey from a young man with a dream to a global cinematic legend is a story that continues to inspire.`
   },
   {
-    id: 3,
+    id: 4,
     slug: "kathakali-the-storytelling-dance",
     title: "Kathakali: The Storytelling Dance of Kerala",
     excerpt:
@@ -110,7 +145,7 @@ Experiencing Kathakali Today
 For those interested in watching a performance, there are several cultural centers across Kerala where this art form is performed and taught, including Kerala Kalamandalam, Kerala Kathakali Centre in Fort Kochi, and Margi Theatre.`
   },
   {
-    id: 4,
+    id: 5,
     slug: "my-own-home-the-malayali-dream",
     title: "My Own Home: The Dream of Every Malayali",
     excerpt:
@@ -124,19 +159,6 @@ For those interested in watching a performance, there are several cultural cente
 
 The Significance of a Home
 For a Malayali, a home is a safe haven... The dream of owning a detached house still holds a special place in the hearts of Malayalis.`
-  },
-  {
-    id: 5,
-    slug: "sree-padmanabhaswamy-temple-history-devotion-mystery",
-    title: "Sree Padmanabhaswamy Temple: A Journey into History, Devotion, and Mystery",
-    excerpt:
-      "The magnificent Sree Padmanabhaswamy Temple stands as a symbol of Kerala's spiritual and architectural heritage.",
-    category: "Kerala Heritage",
-    readTime: "12 min read",
-    author: "Real Estate World",
-    date: "Aug 2024",
-    image: "/lovable-uploads/edacdd34-59c8-4dcf-8485-ef905aa06dc1.png",
-    content: `Nestled in the heart of Thiruvananthapuram stands the magnificent Sree Padmanabhaswamy Temple... This remarkable monument is a place where history, art, and faith converge.`
   },
   {
     id: 6,
@@ -205,19 +227,6 @@ For a Malayali, a home is a safe haven... The dream of owning a detached house s
   },
   {
     id: 11,
-    slug: "nilambur-teak-the-mecca-of-teak",
-    title: "Nilambur Teak: The Mecca of Teak and Kerala's Green Gold",
-    excerpt:
-      "World-renowned Nilambur teak holds GI status for its exceptional durability, color, grain, and natural resistance.",
-    category: "Kerala Heritage",
-    readTime: "8 min read",
-    author: "Real Estate World",
-    date: "Aug 2024",
-    image: "/lovable-uploads/d3a19ff4-8a81-41f0-9dd8-20d436c5382a.png",
-    content: `Nilambur teak, known as "The Mecca of Teak," is highly prized for its quality and history... celebrated at the world’s first Teak Museum in Nilambur.`
-  },
-  {
-    id: 12,
     slug: "sm-street-kozhikode-mithai-theruvu",
     title: "SM Street: Kozhikode's Historic Sweet Meat Street",
     excerpt:
