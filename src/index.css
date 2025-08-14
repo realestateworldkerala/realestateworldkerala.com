@@ -8,53 +8,53 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors - Premium Navy & Gold */
-    --background: 225 100% 8%; /* Deep premium navy background */
-    --foreground: 0 0% 95%; /* Premium platinum text */
+    /* Core Brand Colors - Warm Bronze & Amber */
+    --background: 220 25% 8%; /* Deep sophisticated navy-grey */
+    --foreground: 35 15% 95%; /* Warm platinum text */
 
-    --card: 225 100% 12%; /* Rich navy for cards */
-    --card-foreground: 0 0% 95%;
+    --card: 220 20% 12%; /* Rich dark blue-grey for cards */
+    --card-foreground: 35 15% 95%;
 
-    --popover: 225 100% 12%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 220 20% 12%;
+    --popover-foreground: 35 15% 95%;
 
-    /* Premium Gold Primary */
-    --primary: 45 100% 55%; /* Premium golden */
-    --primary-foreground: 225 100% 8%; /* Deep navy text on gold */
-    --primary-glow: 45 100% 65%; /* Brighter premium gold for effects */
+    /* Warm Bronze/Amber Primary */
+    --primary: 35 85% 58%; /* Warm bronze-amber */
+    --primary-foreground: 220 25% 8%; /* Deep navy text on amber */
+    --primary-glow: 35 95% 68%; /* Brighter warm amber for effects */
 
-    /* Rich Deep Navy Secondary */
-    --secondary: 225 100% 15%; /* Deep premium navy */
-    --secondary-foreground: 0 0% 95%;
+    /* Sophisticated Navy-Grey Secondary */
+    --secondary: 220 25% 15%; /* Deep sophisticated navy */
+    --secondary-foreground: 35 15% 95%;
 
-    /* Premium Silver Muted tones */
-    --muted: 225 50% 10%;
-    --muted-foreground: 0 0% 80%; /* Premium silver */
+    /* Warm Silver-Grey Muted tones */
+    --muted: 220 15% 10%;
+    --muted-foreground: 30 10% 80%; /* Warm silver */
 
-    /* Premium Gold Accent variations */
-    --accent: 45 95% 50%;
-    --accent-foreground: 225 100% 8%;
+    /* Bronze-Copper Accent variations */
+    --accent: 25 75% 55%;
+    --accent-foreground: 220 25% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 225 50% 18%;
-    --input: 225 50% 12%;
-    --ring: 45 95% 60%;
+    --border: 220 15% 18%;
+    --input: 220 15% 12%;
+    --ring: 35 85% 60%;
 
     --radius: 0.75rem;
 
-    /* Premium Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(45 100% 55%), hsl(45 100% 65%), hsl(35 95% 50%));
-    --gradient-navy: linear-gradient(135deg, hsl(225 100% 8%), hsl(225 100% 12%), hsl(225 100% 16%));
-    --gradient-luxury: linear-gradient(135deg, hsl(45 100% 55%) 0%, hsl(225 100% 8%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(225 100% 8%) 0%, hsl(225 100% 12%) 50%, hsl(225 100% 16%) 100%);
+    /* Sophisticated Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(35 85% 58%), hsl(35 95% 68%), hsl(25 75% 55%));
+    --gradient-navy: linear-gradient(135deg, hsl(220 25% 8%), hsl(220 20% 12%), hsl(220 15% 16%));
+    --gradient-luxury: linear-gradient(135deg, hsl(35 85% 58%) 0%, hsl(220 25% 8%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 25% 8%) 0%, hsl(220 20% 12%) 50%, hsl(220 15% 16%) 100%);
 
     /* Premium Shadows */
-    --shadow-gold: 0 10px 30px -5px hsl(45 100% 55% / 0.4);
-    --shadow-luxury: 0 20px 40px -10px hsl(225 100% 8% / 0.8);
-    --shadow-glow: 0 0 40px hsl(45 100% 65% / 0.5);
-    --shadow-card: 0 8px 32px hsl(225 100% 8% / 0.6);
+    --shadow-gold: 0 10px 30px -5px hsl(35 85% 58% / 0.4);
+    --shadow-luxury: 0 20px 40px -10px hsl(220 25% 8% / 0.8);
+    --shadow-glow: 0 0 40px hsl(35 95% 68% / 0.5);
+    --shadow-card: 0 8px 32px hsl(220 25% 8% / 0.6);
 
     /* Animations */
     --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -177,7 +177,7 @@
 
   /* Animated Gradient Text */
   .text-gradient-animate {
-    background: linear-gradient(45deg, hsl(45 100% 55%), hsl(45 100% 65%), hsl(35 95% 50%), hsl(45 100% 55%));
+    background: linear-gradient(45deg, hsl(35 85% 58%), hsl(35 95% 68%), hsl(25 75% 55%), hsl(35 85% 58%));
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -207,10 +207,10 @@
 
   @keyframes pulseGlow {
     0%, 100% { 
-      box-shadow: 0 0 20px hsl(45 100% 55% / 0.4);
+      box-shadow: 0 0 20px hsl(35 85% 58% / 0.4);
     }
     50% { 
-      box-shadow: 0 0 40px hsl(45 100% 55% / 0.7), 0 0 60px hsl(45 100% 65% / 0.5);
+      box-shadow: 0 0 40px hsl(35 85% 58% / 0.7), 0 0 60px hsl(35 95% 68% / 0.5);
     }
   }
 }
