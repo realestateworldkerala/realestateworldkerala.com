@@ -3,17 +3,22 @@ import { CheckCircle, Award, Users, TrendingUp } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-card/30">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section id="about" className="py-24 bg-gradient-to-br from-background via-card/20 to-background relative overflow-hidden">
+      {/* Ultra background elements */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
+      <div className="absolute top-20 left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* Left Content */}
-          <div>
-            <div className="mb-6">
-              <span className="text-primary text-sm font-semibold uppercase tracking-wider">About Us</span>
-              <h2 className="text-4xl md:text-5xl font-luxury font-bold mt-2 mb-4">
-                <span className="text-gradient-animate">10+ Years</span> of Excellence
+          <div className="animate-fade-in">
+            <div className="mb-8">
+              <span className="text-primary text-sm font-premium font-semibold uppercase tracking-[0.2em]">About Us</span>
+              <h2 className="text-5xl md:text-6xl font-ultra mt-4 mb-6 leading-tight">
+                <span className="text-gradient-ultra">10+ Years</span> of Excellence
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-2xl text-muted-foreground font-premium">
                 Your trusted real estate partner in Kerala's premium property market
               </p>
             </div>
@@ -95,48 +100,48 @@ const About = () => {
             </div>
           </div>
 
-          {/* Right Content - Stats Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <Card className="card-luxury p-8 text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-primary" />
+          {/* Right Content - Ultra Stats Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 animate-fade-in">
+            <Card className="card-ultra p-10 text-center hover-lift group">
+              <div className="w-20 h-20 bg-gradient-ultra rounded-2xl flex items-center justify-center mx-auto mb-6 glow-ultra group-hover:scale-110 transition-all duration-300">
+                <Award className="w-10 h-10 text-primary-foreground" />
               </div>
-              <div className="text-4xl font-bold text-primary mb-2">10+</div>
-              <div className="text-lg font-semibold mb-2">Years Experience</div>
-              <p className="text-sm text-muted-foreground">
+              <div className="text-5xl font-ultra text-gradient-ultra mb-4">10+</div>
+              <div className="text-xl font-luxury mb-3">Years Experience</div>
+              <p className="text-muted-foreground font-premium">
                 Over a decade of expertise in Kerala's real estate market
               </p>
             </Card>
 
-            <Card className="card-luxury p-8 text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-primary" />
+            <Card className="card-ultra p-10 text-center hover-lift group">
+              <div className="w-20 h-20 bg-gradient-ultra rounded-2xl flex items-center justify-center mx-auto mb-6 glow-ultra group-hover:scale-110 transition-all duration-300">
+                <Users className="w-10 h-10 text-primary-foreground" />
               </div>
-              <div className="text-4xl font-bold text-primary mb-2">427+</div>
-              <div className="text-lg font-semibold mb-2">Happy Clients</div>
-              <p className="text-sm text-muted-foreground">
+              <div className="text-5xl font-ultra text-gradient-ultra mb-4">427+</div>
+              <div className="text-xl font-luxury mb-3">Happy Clients</div>
+              <p className="text-muted-foreground font-premium">
                 Satisfied customers who trust our expertise and service
               </p>
             </Card>
 
-            <Card className="card-luxury p-8 text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="w-8 h-8 text-primary" />
+            <Card className="card-ultra p-10 text-center hover-lift group">
+              <div className="w-20 h-20 bg-gradient-ultra rounded-2xl flex items-center justify-center mx-auto mb-6 glow-ultra group-hover:scale-110 transition-all duration-300">
+                <TrendingUp className="w-10 h-10 text-primary-foreground" />
               </div>
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
-              <div className="text-lg font-semibold mb-2">Properties Sold</div>
-              <p className="text-sm text-muted-foreground">
+              <div className="text-5xl font-ultra text-gradient-ultra mb-4">500+</div>
+              <div className="text-xl font-luxury mb-3">Properties Sold</div>
+              <p className="text-muted-foreground font-premium">
                 Successful transactions across residential and commercial properties
               </p>
             </Card>
 
-            <Card className="card-luxury p-8 text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="w-8 h-8 text-primary text-2xl">⭐</div>
+            <Card className="card-ultra p-10 text-center hover-lift group">
+              <div className="w-20 h-20 bg-gradient-ultra rounded-2xl flex items-center justify-center mx-auto mb-6 glow-ultra group-hover:scale-110 transition-all duration-300">
+                <div className="w-10 h-10 text-primary-foreground text-3xl">⭐</div>
               </div>
-              <div className="text-4xl font-bold text-primary mb-2">4.9</div>
-              <div className="text-lg font-semibold mb-2">Google Rating</div>
-              <p className="text-sm text-muted-foreground">
+              <div className="text-5xl font-ultra text-gradient-ultra mb-4">4.9</div>
+              <div className="text-xl font-luxury mb-3">Google Rating</div>
+              <p className="text-muted-foreground font-premium">
                 Based on 90+ genuine customer reviews on Google
               </p>
             </Card>

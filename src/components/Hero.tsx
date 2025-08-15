@@ -33,30 +33,30 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-6xl mx-auto">
-          {/* Main Heading - Luxury Design */}
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-luxury font-bold mb-8 leading-tight">
-            <span className="block text-primary drop-shadow-[0_0_20px_rgba(255,215,0,0.5)]">
+          {/* Main Heading - Ultra Luxury Design */}
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-ultra mb-8 leading-[0.85] tracking-tight">
+            <span className="block text-gradient-ultra drop-shadow-[0_0_30px_rgba(255,215,0,0.8)] animate-glow-pulse">
               ReaL EstatE
             </span>
-            <span className="block text-white mt-2">
+            <span className="block text-white mt-4 drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">
               WorlD
             </span>
           </h1>
           
           {/* Subheading */}
-          <p className="text-2xl md:text-3xl text-white font-medium mb-4 drop-shadow-lg">
+          <p className="text-2xl md:text-4xl text-white font-luxury font-medium mb-6 drop-shadow-xl">
             "Your Trusted Property Partner in Kerala"
           </p>
           
-          <p className="text-lg md:text-xl text-primary/90 mb-10 font-light">
+          <p className="text-xl md:text-2xl text-gradient-ultra mb-12 font-premium tracking-wide">
             Buy · Sell · Rent · Invest
           </p>
 
-          {/* CTA Buttons - Luxury Style */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+          {/* CTA Buttons - Ultra Luxury Style */}
+          <div className="flex flex-col sm:flex-row gap-8 justify-center mb-20">
             <Button 
               size="lg" 
-              className="bg-primary text-black hover:bg-primary/90 px-10 py-4 text-lg font-semibold rounded-full shadow-gold transition-all duration-300 hover:scale-105"
+              className="btn-ultra text-xl px-12 py-6 hover-lift font-ultra tracking-wide"
               onClick={() => document.getElementById('properties')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Properties
@@ -64,40 +64,40 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 border-primary/80 text-primary hover:bg-primary/10 px-10 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-105"
+              className="btn-ghost-ultra text-xl px-12 py-6 font-premium tracking-wide"
               onClick={() => window.open('https://wa.me/919447258746', '_blank')}
             >
               Contact Us
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">10+</div>
-              <div className="text-white/80 font-medium">Years Experience</div>
+          {/* Ultra Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20">
+            <div className="text-center card-glass p-6 hover-glow">
+              <div className="text-5xl font-ultra text-gradient-ultra mb-3">10+</div>
+              <div className="text-white/90 font-premium text-lg">Years Experience</div>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">90</div>
-              <div className="text-white/80 font-medium">Google Reviews</div>
+            <div className="text-center card-glass p-6 hover-glow">
+              <div className="text-5xl font-ultra text-gradient-ultra mb-3">90</div>
+              <div className="text-white/90 font-premium text-lg">Google Reviews</div>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">427+</div>
-              <div className="text-white/80 font-medium">Happy Clients</div>
+            <div className="text-center card-glass p-6 hover-glow">
+              <div className="text-5xl font-ultra text-gradient-ultra mb-3">427+</div>
+              <div className="text-white/90 font-premium text-lg">Happy Clients</div>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
-              <div className="text-white/80 font-medium">Properties Sold</div>
+            <div className="text-center card-glass p-6 hover-glow">
+              <div className="text-5xl font-ultra text-gradient-ultra mb-3">500+</div>
+              <div className="text-white/90 font-premium text-lg">Properties Sold</div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* WhatsApp Floating Button */}
-      <div className="fixed bottom-6 right-6 z-50">
+      {/* Ultra WhatsApp Floating Button */}
+      <div className="fixed bottom-8 right-8 z-50">
         <Button
           size="lg"
-          className="btn-luxury rounded-full w-16 h-16 shadow-lg pulse-glow"
+          className="btn-ultra rounded-full w-20 h-20 shadow-ultra glow-ultra float"
           onClick={() => window.open('https://wa.me/919447258746', '_blank')}
         >
           <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
