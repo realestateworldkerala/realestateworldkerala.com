@@ -163,8 +163,7 @@
   }
   
   .card-glass {
-    @apply bg-gradient-glass border border-white/10 rounded-2xl;
-    backdrop-filter: blur(20px);
+    @apply bg-white/5 border border-white/10 rounded-2xl backdrop-blur-[20px];
   }
 
   /* Ultra Buttons */
