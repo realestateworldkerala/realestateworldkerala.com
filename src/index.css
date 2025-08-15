@@ -8,32 +8,32 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors - Warm Bronze & Amber */
-    --background: 220 25% 8%; /* Deep sophisticated navy-grey */
-    --foreground: 35 15% 95%; /* Warm platinum text */
+    /* Luxury Black & Gold Theme */
+    --background: 0 0% 5%; /* Deep black */
+    --foreground: 45 100% 90%; /* Gold-tinted white */
 
-    --card: 220 20% 12%; /* Rich dark blue-grey for cards */
-    --card-foreground: 35 15% 95%;
+    --card: 0 0% 8%; /* Rich black for cards */
+    --card-foreground: 45 100% 90%;
 
-    --popover: 220 20% 12%;
-    --popover-foreground: 35 15% 95%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 45 100% 90%;
 
-    /* Warm Bronze/Amber Primary */
-    --primary: 35 85% 58%; /* Warm bronze-amber */
-    --primary-foreground: 220 25% 8%; /* Deep navy text on amber */
-    --primary-glow: 35 95% 68%; /* Brighter warm amber for effects */
+    /* Luxury Gold Primary */
+    --primary: 45 100% 70%; /* Rich gold */
+    --primary-foreground: 0 0% 0%; /* Black text on gold */
+    --primary-glow: 45 100% 80%; /* Brighter gold for effects */
 
-    /* Sophisticated Navy-Grey Secondary */
-    --secondary: 220 25% 15%; /* Deep sophisticated navy */
-    --secondary-foreground: 35 15% 95%;
+    /* Deep Black Secondary */
+    --secondary: 0 0% 12%; /* Charcoal black */
+    --secondary-foreground: 45 100% 90%;
 
-    /* Warm Silver-Grey Muted tones */
-    --muted: 220 15% 10%;
-    --muted-foreground: 30 10% 80%; /* Warm silver */
+    /* Subtle Grey Muted tones */
+    --muted: 0 0% 15%;
+    --muted-foreground: 45 30% 75%; /* Muted gold */
 
-    /* Bronze-Copper Accent variations */
-    --accent: 25 75% 55%;
-    --accent-foreground: 220 25% 8%;
+    /* Gold Accent variations */
+    --accent: 45 85% 65%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -44,17 +44,17 @@
 
     --radius: 0.75rem;
 
-    /* Sophisticated Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(35 85% 58%), hsl(35 95% 68%), hsl(25 75% 55%));
-    --gradient-navy: linear-gradient(135deg, hsl(220 25% 8%), hsl(220 20% 12%), hsl(220 15% 16%));
-    --gradient-luxury: linear-gradient(135deg, hsl(35 85% 58%) 0%, hsl(220 25% 8%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(220 25% 8%) 0%, hsl(220 20% 12%) 50%, hsl(220 15% 16%) 100%);
+    /* Luxury Black & Gold Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(45 100% 70%), hsl(45 100% 80%), hsl(45 85% 65%));
+    --gradient-navy: linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 8%), hsl(0 0% 12%));
+    --gradient-luxury: linear-gradient(135deg, hsl(45 100% 70%) 0%, hsl(0 0% 5%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(0 0% 8%) 50%, hsl(0 0% 12%) 100%);
 
-    /* Premium Shadows */
-    --shadow-gold: 0 10px 30px -5px hsl(35 85% 58% / 0.4);
-    --shadow-luxury: 0 20px 40px -10px hsl(220 25% 8% / 0.8);
-    --shadow-glow: 0 0 40px hsl(35 95% 68% / 0.5);
-    --shadow-card: 0 8px 32px hsl(220 25% 8% / 0.6);
+    /* Premium Gold Shadows */
+    --shadow-gold: 0 10px 30px -5px hsl(45 100% 70% / 0.5);
+    --shadow-luxury: 0 20px 40px -10px hsl(0 0% 0% / 0.9);
+    --shadow-glow: 0 0 40px hsl(45 100% 80% / 0.6);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.7);
 
     /* Animations */
     --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -177,7 +177,7 @@
 
   /* Animated Gradient Text */
   .text-gradient-animate {
-    background: linear-gradient(45deg, hsl(35 85% 58%), hsl(35 95% 68%), hsl(25 75% 55%), hsl(35 85% 58%));
+    background: linear-gradient(45deg, hsl(45 100% 70%), hsl(45 100% 80%), hsl(45 85% 65%), hsl(45 100% 70%));
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

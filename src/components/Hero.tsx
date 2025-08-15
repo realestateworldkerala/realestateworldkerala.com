@@ -1,18 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Star, Users, Home, Award } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with overlay */}
+      {/* Background with Parallax Effect */}
       <div className="absolute inset-0">
         <img 
           src="/lovable-uploads/b90e89a1-5862-4208-86db-0f53917e0303.png" 
-          alt="Modern luxury building with golden evening lighting"
-          className="w-full h-full object-cover"
+          alt="Premium Kerala real estate building with luxury architecture"
+          className="w-full h-full object-cover transition-transform duration-75"
+          style={{
+            transform: `translateY(${scrollY * 0.5}px)`
+          }}
         />
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-primary/30"></div>
       </div>
 
       {/* Floating decorative elements */}
@@ -20,102 +32,63 @@ const Hero = () => {
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-primary/5 rounded-full blur-2xl float"></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="text-center lg:text-left">
-            {/* Trust Badge */}
-            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6 pulse-glow">
-              <Star className="w-4 h-4 text-primary fill-primary" />
-              <span className="text-sm font-medium text-primary">Trusted real estate partner in Trivandrum, Kerala</span>
-              <Star className="w-4 h-4 text-primary fill-primary" />
-            </div>
+        <div className="text-center max-w-6xl mx-auto">
+          {/* Main Heading - Luxury Design */}
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-luxury font-bold mb-8 leading-tight">
+            <span className="block text-primary drop-shadow-[0_0_20px_rgba(255,215,0,0.5)]">
+              ReaL EstatE
+            </span>
+            <span className="block text-white mt-2">
+              WorlD
+            </span>
+          </h1>
+          
+          {/* Subheading */}
+          <p className="text-2xl md:text-3xl text-white font-medium mb-4 drop-shadow-lg">
+            "Your Trusted Property Partner in Kerala"
+          </p>
+          
+          <p className="text-lg md:text-xl text-primary/90 mb-10 font-light">
+            Buy · Sell · Rent · Invest
+          </p>
 
-            {/* Main Heading */}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-luxury font-bold mb-6 leading-tight">
-              <span className="text-gradient-animate">ReaL EstatE WorlD</span>
-            </h1>
-
-            {/* Subheading */}
-            <p className="text-xl md:text-2xl text-foreground/80 mb-4 font-light">
-              Discover premium properties in <span className="text-primary font-semibold">God's Own Country</span>
-            </p>
-            <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              10+ years of trusted expertise in <a href="#about" className="text-primary hover:text-primary-glow underline transition-colors">Kerala real estate</a> with comprehensive <a href="#services" className="text-primary hover:text-primary-glow underline transition-colors">property services</a>
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-              <Button 
-                size="lg" 
-                className="btn-luxury text-lg px-8 py-6"
-                onClick={() => document.getElementById('properties')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Explore Properties
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-primary/30 text-primary hover:bg-primary/10 text-lg px-8 py-6"
-                onClick={() => window.open('https://wa.me/919447258746', '_blank')}
-              >
-                WhatsApp Consultation
-              </Button>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">10+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">90</div>
-                <div className="text-sm text-muted-foreground">Google Reviews</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">427+</div>
-                <div className="text-sm text-muted-foreground">Happy Clients</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">500+</div>
-                <div className="text-sm text-muted-foreground">Properties Sold</div>
-              </div>
-            </div>
+          {/* CTA Buttons - Luxury Style */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+            <Button 
+              size="lg" 
+              className="bg-primary text-black hover:bg-primary/90 px-10 py-4 text-lg font-semibold rounded-full shadow-gold transition-all duration-300 hover:scale-105"
+              onClick={() => document.getElementById('properties')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              View Properties
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-2 border-primary/80 text-primary hover:bg-primary/10 px-10 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-105"
+              onClick={() => window.open('https://wa.me/919447258746', '_blank')}
+            >
+              Contact Us
+            </Button>
           </div>
 
-          {/* Right Content - Feature Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <Card className="card-luxury p-6 text-center">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Home className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="font-semibold text-lg mb-2"><a href="#services" className="hover:text-primary transition-colors">Buy Property</a></h3>
-              <p className="text-sm text-muted-foreground">Find your <a href="#properties" className="text-primary hover:text-primary-glow underline transition-colors">dream home</a> in Kerala's most sought-after locations</p>
-            </Card>
-
-            <Card className="card-luxury p-6 text-center">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Award className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="font-semibold text-lg mb-2"><a href="#services" className="hover:text-primary transition-colors">Sell Property</a></h3>
-              <p className="text-sm text-muted-foreground">Get the best value for your property with our <a href="#about" className="text-primary hover:text-primary-glow underline transition-colors">expert guidance</a></p>
-            </Card>
-
-            <Card className="card-luxury p-6 text-center">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Users className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="font-semibold text-lg mb-2">Rent Property</h3>
-              <p className="text-sm text-muted-foreground">Premium rental properties for every budget and preference</p>
-            </Card>
-
-            <Card className="card-luxury p-6 text-center">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Star className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="font-semibold text-lg mb-2"><a href="#contact" className="hover:text-primary transition-colors">Consultation</a></h3>
-              <p className="text-sm text-muted-foreground">Expert advice for all your <a href="#services" className="text-primary hover:text-primary-glow underline transition-colors">real estate investment</a> decisions</p>
-            </Card>
+          {/* Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-2">10+</div>
+              <div className="text-white/80 font-medium">Years Experience</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-2">90</div>
+              <div className="text-white/80 font-medium">Google Reviews</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-2">427+</div>
+              <div className="text-white/80 font-medium">Happy Clients</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-white/80 font-medium">Properties Sold</div>
+            </div>
           </div>
         </div>
       </div>
