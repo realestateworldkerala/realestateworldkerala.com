@@ -2,7 +2,7 @@ User-agent: *
 
 
 # https://realestateworldkerala.com
-Host: https://realestateworldkerala.com
+Host: realestateworldkerala.com
 
 # Block indexing of netlify subdomains
 User-agent: *
