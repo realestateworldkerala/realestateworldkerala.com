@@ -1,12 +1,12 @@
 User-agent: *
 
 
-# https://realestateworldkerala.com
+https://realestateworldkerala.com
 Host: realestateworldkerala.com
 
-# Block indexing of netlify subdomains
+Block indexing of netlify subdomains
 User-agent: *
 Disallow: https://realestateworldkerala.netlify.app/
 Disallow: https://realestateworldtvm.netlify.app/
 
-Sitemap: https://realestateworldkerala.com/sitemap.xml
+Sitemap: https://realestateworldkerala.com/
