@@ -76,7 +76,7 @@ const Properties = () => {
       id: 6,
       title: "Bavani Tower - Commercial Building",
       location: "Aryasala, Trivandrum",
-      price: "₹20 Crores",
+      price: "₹24 Crores",
       type: "Commercial",
       status: "For Sale",
       area: "34,000 sq ft",
