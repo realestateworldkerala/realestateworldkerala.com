@@ -23,7 +23,16 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/privacy-policy.html" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsConditions />} />
+            <Route path="/terms.html" element={<TermsConditions />} />
             <Route path="/terms-conditions" element={<TermsConditions />} />
+            <Route path="/about" element={<Index />} />
+            <Route path="/services" element={<Index />} />
+            <Route path="/properties" element={<Index />} />
+            <Route path="/contact" element={<Index />} />
+            <Route path="/blog" element={<Index />} />
+            <Route path="/reviews" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

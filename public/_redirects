@@ -1,1 +1,9 @@
-
+/* /index.html 200
+/privacy-policy.html /privacy-policy 301
+/terms.html /terms-conditions 301
+/about /index.html#about 301
+/services /index.html#services 301
+/properties /index.html#properties 301
+/contact /index.html#contact 301
+/blog /index.html#blog 301
+/reviews /index.html#reviews 301
