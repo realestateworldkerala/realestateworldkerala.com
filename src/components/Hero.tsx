@@ -17,8 +17,8 @@ const Hero = () => {
       {/* Background with Parallax Effect */}
       <div className="absolute inset-0">
         <img 
-          src="/lovable-uploads/62d6d2fc-07ce-4f82-9326-f162cbada73c.png" 
-          alt="Premium modern luxury house with beautiful architecture and lighting"
+          src="/lovable-uploads/c8d30fc4-7070-4d55-a443-0cf40d6453ef.png" 
+          alt="Modern luxury skyscraper with stunning golden hour lighting and city skyline"
           className="w-full h-full object-cover transition-transform duration-75"
           style={{
             transform: `translateY(${scrollY * 0.5}px)`
