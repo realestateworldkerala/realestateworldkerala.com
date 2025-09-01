@@ -94,7 +94,7 @@ const Hero = () => {
       </div>
 
       {/* Ultra WhatsApp Floating Button */}
-      <div className="fixed bottom-8 right-8 z-50">
+      <div className="fixed bottom-8 left-8 z-50">
         <Button
           size="lg"
           className="btn-ultra rounded-full w-20 h-20 shadow-ultra glow-ultra float"
