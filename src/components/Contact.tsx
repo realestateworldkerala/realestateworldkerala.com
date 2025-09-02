@@ -69,12 +69,12 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-primary text-sm font-semibold uppercase tracking-wider">Contact Us</span>
+          <span className="text-primary text-sm font-semibold uppercase tracking-wider">Contact Real Estate Experts</span>
           <h2 className="text-4xl md:text-5xl font-luxury font-bold mt-2 mb-4">
-            Get in <span className="text-gradient-animate">Touch</span>
+            Find Your Dream Property in <span className="text-gradient-animate">Kerala</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to find your dream property? Contact our expert team for personalized assistance and guidance
+            Connect with Trivandrum's trusted real estate consultants for premium properties across Kerala
           </p>
         </div>
 
@@ -123,10 +123,11 @@ const Contact = () => {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Location</h3>
+                    <h3 className="font-semibold text-lg mb-2">Our Office Location</h3>
                     <p className="text-muted-foreground">
-                      Trivandrum, Kerala<br />
-                      God's Own Country
+                      Real Estate World Kerala<br />
+                      Trivandrum, Kerala 695001<br />
+                      Near Technopark, God's Own Country
                     </p>
                   </div>
                 </div>
@@ -266,6 +267,30 @@ const Contact = () => {
               </div>
             </Card>
           </div>
+        </div>
+
+        {/* Google Maps Section */}
+        <div className="mt-16">
+          <Card className="card-luxury p-8">
+            <h3 className="text-2xl font-luxury font-bold mb-6 text-center">Visit Our Office in Trivandrum</h3>
+            <div className="w-full h-96 rounded-lg overflow-hidden border border-border/20">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125718.43863435812!2d76.8344!3d8.5241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbb805bbcd47%3A0x15439fab5c5c81cb!2sThiruvananthapuram%2C%20Kerala!5e0!3m2!1sen!2sin!4v1699000000000!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Real Estate World Kerala Office Location in Trivandrum"
+              ></iframe>
+            </div>
+            <div className="mt-4 text-center">
+              <p className="text-muted-foreground">
+                Located in the heart of Trivandrum, Kerala - easily accessible from Technopark, Kazhakoottam, and other major areas
+              </p>
+            </div>
+          </Card>
         </div>
       </div>
     </section>

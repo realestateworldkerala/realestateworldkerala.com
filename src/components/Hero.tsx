@@ -33,23 +33,23 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-6xl mx-auto">
-          {/* Main Heading - Ultra Luxury Design */}
+          {/* Main Heading - Ultra Luxury Design with Local SEO */}
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-ultra mb-8 leading-[0.85] tracking-tight">
             <span className="block text-gradient-ultra drop-shadow-[0_0_30px_rgba(255,215,0,0.8)] animate-glow-pulse">
-              ReaL EstatE
+              Real Estate
             </span>
             <span className="block text-white mt-4 drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-              WorlD
+              Trivandrum Kerala
             </span>
           </h1>
           
-          {/* Subheading */}
+          {/* Subheading with Local Keywords */}
           <p className="text-2xl md:text-4xl text-white font-luxury font-medium mb-6 drop-shadow-xl">
-            "Your Trusted Property Partner in Kerala"
+            "Premium Properties in God's Own Country"
           </p>
           
           <p className="text-xl md:text-2xl text-gradient-ultra mb-12 font-premium tracking-wide">
-            Buy · Sell · Rent · Invest
+            Buy • Sell • Rent • Invest in Kochi • Trivandrum • Kerala
           </p>
 
           {/* CTA Buttons - Ultra Luxury Style */}

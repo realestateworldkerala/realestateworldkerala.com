@@ -16,44 +16,44 @@ const About = () => {
             <div className="mb-8">
               <span className="text-primary text-sm font-premium font-semibold uppercase tracking-[0.2em]">About Us</span>
               <h2 className="text-5xl md:text-6xl font-ultra mt-4 mb-6 leading-tight">
-                <span className="text-gradient-ultra">10+ Years</span> of Excellence
+                <span className="text-gradient-ultra">Trivandrum's #1</span> Real Estate Consultants
               </h2>
               <p className="text-2xl text-muted-foreground font-premium">
-                Your trusted real estate partner in Kerala's premium property market
+                Kerala's most trusted property advisors for villas, houses, flats & commercial spaces
               </p>
             </div>
 
             <div className="space-y-6 mb-8">
               <p className="text-lg leading-relaxed">
-                Real Estate World has been Kerala's premier real estate consultancy for over a decade, 
-                specializing in <a href="#properties" className="text-primary hover:text-primary-glow underline transition-colors">premium properties</a> across God's Own Country. Our comprehensive <a href="#services" className="text-primary hover:text-primary-glow underline transition-colors">real estate 
-                services</a> include residential property sales, commercial real estate investments, luxury villa 
-                development, apartment complexes, land acquisition, and property management solutions throughout 
-                Thiruvananthapuram, Kochi, Kozhikode, Kottayam, and Alappuzha districts.
+                <strong>Real Estate World Kerala</strong> is Trivandrum's premier property consultancy with 10+ years of expertise in 
+                <a href="#properties" className="text-primary hover:text-primary-glow underline transition-colors mx-1">buying, selling and renting properties</a> 
+                across Kerala. We specialize in residential villas, luxury apartments, commercial buildings, agricultural land, 
+                and waterfront properties in prime locations including Technopark Trivandrum, Kakkanad Kochi, Calicut IT Hub, 
+                Kottayam town, and Alappuzha backwater regions.
               </p>
               
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Our experienced real estate professionals understand Kerala's unique property market dynamics, 
-                from heritage homes in Fort Kochi to modern IT corridor developments in Technopark Trivandrum. 
-                We specialize in property valuation, legal documentation, home loans facilitation, and investment 
-                advisory services for both domestic and NRI clients seeking to invest in Kerala real estate.
+                Our comprehensive real estate services cover property valuation, legal documentation, home loan facilitation, 
+                RERA compliance, title verification, and investment advisory for both domestic and NRI clients. Whether you're 
+                searching for budget homes under ₹50 lakhs in suburban Trivandrum, premium villas above ₹2 crores in Kochi, 
+                or commercial spaces for business expansion, our expert team provides end-to-end solutions tailored to Kerala's 
+                unique property market dynamics.
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
-                With expertise in residential plots, luxury villas, budget apartments, commercial spaces, 
-                agricultural land, and waterfront properties, we've successfully facilitated over 500 property 
-                transactions worth ₹200+ crores. Our client-centric approach includes comprehensive market analysis, 
-                property documentation verification, negotiation support, and post-sale services, making us the 
-                most trusted real estate partner in Kerala with 427+ satisfied clients and a stellar 4.9-star 
-                rating based on 90+ Google Reviews.
+                With deep knowledge of Kerala's real estate regulations, local market trends, and property appreciation patterns, 
+                we've successfully facilitated 500+ property transactions worth ₹200+ crores across Thiruvananthapuram district, 
+                Ernakulam, Kozhikode, Thrissur, and other major Kerala cities. Our services include property search assistance, 
+                market analysis reports, negotiation support, registration procedures, bank loan coordination, and post-sale 
+                property management services.
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Whether you're looking for <a href="#properties" className="text-primary hover:text-primary-glow underline transition-colors">budget homes under ₹50 lakhs</a>, <a href="#properties" className="text-primary hover:text-primary-glow underline transition-colors">premium villas above ₹2 crores</a>, 
-                commercial properties for business expansion, or investment opportunities in Kerala's growing 
-                real estate market, our team provides <a href="#services" className="text-primary hover:text-primary-glow underline transition-colors">end-to-end solutions</a> including property search, 
-                legal clearance, bank loan assistance, registration procedures, and ongoing property management 
-                services to ensure a seamless real estate experience. <a href="#contact" className="text-primary hover:text-primary-glow underline transition-colors">Contact us today</a> for personalized assistance.
+                From luxury beach-front villas in Kovalam to modern tech-corridor apartments in Technopark, heritage properties 
+                in Fort Kochi to agricultural plantations in Wayanad, we offer specialized expertise in every segment of Kerala 
+                real estate. Our client-centric approach, transparent pricing, and commitment to legal compliance has earned us 
+                a stellar 4.9-star rating from 90+ Google Reviews and the trust of 427+ satisfied clients who recommend our 
+                services for property investments in God's Own Country.
               </p>
             </div>
 
