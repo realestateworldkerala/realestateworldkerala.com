@@ -50,7 +50,10 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-E26DL7QB42');
+      gtag('config', 'G-E26DL7QB42', {
+        page_title: document.title,
+        page_location: window.location.href
+      });
     </script>
 
     <!-- Google Tag Manager -->
@@ -118,7 +121,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div id="root"></div>
 
   <!-- Tidio Live Chat -->
-  <script src="https://code.tidio.co/ipo73sucohbu29lf2ayu6nsdzjmvrw1y.js" async></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const tidioScript = document.createElement('script');
+      tidioScript.src = 'https://code.tidio.co/ipo73sucohbu29lf2ayu6nsdzjmvrw1y.js';
+      tidioScript.async = true;
+      tidioScript.defer = true;
+      document.head.appendChild(tidioScript);
+    });
+  </script>
 
   <script type="module" src="/src/main.tsx"></script>
 </body>
