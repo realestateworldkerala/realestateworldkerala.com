@@ -42,7 +42,7 @@ const Hero = () => {
           
           {/* Subheading with Local Keywords */}
           <p className="text-2xl md:text-4xl text-white font-luxury font-medium mb-6 drop-shadow-xl">
-            "Budget & Premium Properties in God's Own Country"
+            "Budget and Premium Properties in God's Own Country"
           </p>
           
           <p className="text-xl md:text-2xl text-gradient-ultra mb-12 font-premium tracking-wide">
