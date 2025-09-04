@@ -88,8 +88,17 @@ const Properties = () => {
   ];
 
   return (
-    <section id="properties" className="py-20 bg-card/30">
-      <div className="container mx-auto px-4">
+    <section id="properties" className="py-20 bg-card/30 relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src="/lovable-uploads/36a22560-0832-49eb-93b7-2ac561a4b3c6.png" 
+          alt="Luxury villa with pool background"
+          className="w-full h-full object-cover opacity-10"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-card/30"></div>
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-primary text-sm font-semibold uppercase tracking-wider">Featured Properties</span>

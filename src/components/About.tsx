@@ -4,6 +4,15 @@ import { CheckCircle, Award, Users, TrendingUp } from "lucide-react";
 const About = () => {
   return (
     <section id="about" className="py-24 bg-gradient-to-br from-background via-card/20 to-background relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src="/lovable-uploads/1f380594-d629-411d-b80e-e3e36a90228b.png" 
+          alt="Modern luxury house with garden background"
+          className="w-full h-full object-cover opacity-10"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-primary/20"></div>
+      </div>
       {/* Ultra background elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
       <div className="absolute top-20 left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>

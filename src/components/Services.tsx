@@ -36,6 +36,15 @@ const Services = () => {
 
   return (
     <section id="services" className="py-24 bg-gradient-to-br from-card/10 via-background to-card/20 relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src="/lovable-uploads/da877193-f425-4179-8cfc-5569464b1ce1.png" 
+          alt="Luxury tower building background"
+          className="w-full h-full object-cover opacity-15"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/85 to-primary/20"></div>
+      </div>
       {/* Ultra background elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5"></div>
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
