@@ -7,11 +7,11 @@ const About = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="/lovable-uploads/1f380594-d629-411d-b80e-e3e36a90228b.webp" 
+          src="/lovable-uploads/1f380594-d629-411d-b80e-e3e36a90228b.png" 
           alt="Modern luxury house with garden background"
-          className="w-full h-full object-cover opacity-10"
+          className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-primary/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/85 to-primary/20"></div>
       </div>
       {/* Ultra background elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>

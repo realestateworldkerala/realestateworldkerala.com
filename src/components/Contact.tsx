@@ -71,9 +71,9 @@ const Contact = () => {
         <img 
           src="/lovable-uploads/a90491cd-2aca-4ac5-9c64-daac596103e5.png" 
           alt="Evening luxury house background"
-          className="w-full h-full object-cover opacity-10"
+          className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-primary/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/85 to-primary/10"></div>
       </div>
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}

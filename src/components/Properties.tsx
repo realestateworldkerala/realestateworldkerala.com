@@ -94,9 +94,9 @@ const Properties = () => {
         <img 
           src="/lovable-uploads/36a22560-0832-49eb-93b7-2ac561a4b3c6.png" 
           alt="Luxury villa with pool background"
-          className="w-full h-full object-cover opacity-10"
+          className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-card/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/85 to-card/30"></div>
       </div>
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}

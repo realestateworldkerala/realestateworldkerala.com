@@ -41,9 +41,9 @@ const Services = () => {
         <img 
           src="/lovable-uploads/da877193-f425-4179-8cfc-5569464b1ce1.png" 
           alt="Luxury tower building background"
-          className="w-full h-full object-cover opacity-15"
+          className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/85 to-primary/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background/85 via-background/80 to-primary/20"></div>
       </div>
       {/* Ultra background elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5"></div>
