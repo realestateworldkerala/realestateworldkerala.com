@@ -7,7 +7,7 @@ const About = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="/lovable-uploads/1f380594-d629-411d-b80e-e3e36a90228b.png" 
+          src="/lovable-uploads/1f380594-d629-411d-b80e-e3e36a90228b.webp" 
           alt="Modern luxury house with garden background"
           className="w-full h-full object-cover opacity-10"
         />

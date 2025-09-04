@@ -17,7 +17,7 @@ const Hero = () => {
       {/* Background with Parallax Effect */}
       <div className="absolute inset-0">
         <img 
-          src="/lovable-uploads/c8d30fc4-7070-4d55-a443-0cf40d6453ef.png" 
+          src="/lovable-uploads/c8d30fc4-7070-4d55-a443-0cf40d6453ef.webp" 
           alt="Modern luxury skyscraper with stunning golden hour lighting and city skyline"
           className="w-full h-full object-cover transition-transform duration-75"
           style={{
